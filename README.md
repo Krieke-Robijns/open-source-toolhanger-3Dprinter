@@ -26,6 +26,15 @@ This document describes a toolchanger system for FDM 3D printers. The design fea
   Behind the tools there is a carriage that can move in the X axis, this carriage contains:
   - A compressed air line to cool the hotends down further after docking
   - A verticical linear rail that hold an induction coil to preheat the hotends
+ 
+- **Filament Handling System**
+  - Multiple filament lines will be routed directly to the toolhead To minimize toolchange times
+  - A typical multi color style system is used to preload filament into designated reverse Bowden tubes.
+  - When a toolchange is initiated, the previously loaded filament gets cut and fully retracted.
+  - the preloaded filament is inserted in the direct drive extruder.
+  - The next fillemant will be preloaded in the tube the previous fillament was in
+  - Flexible fillament, which are less compatible with AMS-like mechanisms, are fed through dedicated permanent tubes.
+  - A few of these tubes will be 
 
 - **Tool Change Process**:
   1 **Pre-heating and cooling**:
